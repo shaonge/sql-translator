@@ -1,0 +1,45 @@
+databases:
+- database: school
+  type: postgres
+  username: postgres
+  password: "123456"
+  host: 129.204.121.14
+  port: "5432"
+  tables:
+  - table: teachers
+    fields:
+    - field: id
+    - field: name
+    - field: gender
+    - field: phone
+  - table: courses
+    fields:
+    - field: name
+    - field: teacher
+      foreign_key: teachers
+    - field: id
+  - table: students
+    fields:
+    - field: address
+    - field: id
+    - field: name
+    - field: gender
+    - field: phone
+    - field: qq
+    - field: email
+  - table: testtable
+    fields:
+    - field: student
+      foreign_key: students
+    - field: id
+  - table: testt
+    fields:
+    - field: id
+    - field: test
+      foreign_key: testtable
+- database: test
+  type: mysql
+  username: root
+  password: "123456"
+  host: 129.204.121.14
+  port: "3306"

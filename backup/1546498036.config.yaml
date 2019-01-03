@@ -1,0 +1,27 @@
+databases:
+- database: school
+  type: postgres
+  username: postgres
+  password: "123456"
+  host: 129.204.121.14
+  port: "5432"
+  tables:
+  - table: grades
+    fields:
+    - field: id
+    - field: rank
+  - table: students
+    fields:
+    - field: id
+    - field: name
+    - field: grade
+      foreign_key: grades
+  - table: classrooms
+    fields:
+    - field: id
+- database: test
+  type: mysql
+  username: root
+  password: "123456"
+  host: 129.204.121.14
+  port: "3306"
