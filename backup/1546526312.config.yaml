@@ -6,13 +6,17 @@ databases:
   host: 47.94.206.255
   port: "5432"
   tables:
-  - table: books
+  - table: kkkkk
     fields:
     - field: id
     - field: name
-    - field: ISBN
-    - field: pages
-    - field: price
+    - field: time
+  - table: keshe
+    fields:
+    - field: id
+    - field: name
+    - field: phone
+    - field: iidd
 - database: test
   type: mysql
   username: root
@@ -34,6 +38,7 @@ databases:
     - field: phone
   - table: students
     fields:
+    - field: address
     - field: id
     - field: name
     - field: gender

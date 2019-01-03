@@ -13,6 +13,15 @@ databases:
     - field: ISBN
     - field: pages
     - field: price
+  - table: testtable
+    fields:
+    - field: student
+    - field: id
+  - table: testt
+    fields:
+    - field: id
+    - field: acds
+      foreign_key: testtable
 - database: test
   type: mysql
   username: root
